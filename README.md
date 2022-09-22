@@ -1,6 +1,28 @@
-# Sample AEM project template
+# EL Flickr Asset Finder Extension - AEM 6.5
 
-This is a project template for AEM-based applications. It is intended as a best-practice set of examples as well as a potential starting point to develop your own functionality.
+## Features
+
+This project is an extension of [aem-authoring-extension-assetfinder-flickr](https://github.com/Adobe-Marketing-Cloud/aem-authoring-extension-assetfinder-flickr). There has been no updates from 6.3, it has been modified to provide support for 6.5 with more features
+
+Following are the  features added in this project
+- `Latest archetype and api support`: Built with archetype 37 and latest api changes.
+- `Lazy Loading with Pagination`: Pagination support for lazy loading to load more assets from flickr api, AEM sends page parameter to jsonCallback, however there is no support on flickr api to load more assets based on page.
+- `Drag/Drop support` : Drag and drop support to custom flickr component. 
+- `OSGI Configuration support` : Flickr api is configured in osgi. 
+- `Enable/Disable Plugin`: Plugin can be enabled/disabled from the checkbox option in OSGI configuration
+
+
+Our Pro version has additional features
+
+- `Asset Download`: Asset is downloaded to AEM from Flickr as soon as author drops  on the component
+- `OOTB support` : Out of the Box components can be used for drag and drop options. 
+- `Metadata`: All the metadata values from REST API are stored on the DAM Asset path in AEM
+- `Tags`:  Tag values from REST API are created and stored in AEM Tagging Structure
+- `Structured DAM`: External DAM assets are stored in organized and structured folders in AEM Assets, structure is based on the external URL path
+- `Customizable`: API url, DAM path are fully configurable in OSGI settings making it to extend for other REST based APIs and customization
+
+Please [contact us](https://eksperiencelabs.com/contact/ ) if you are interested in learning about our pro version. 
+
 
 ## Modules
 
@@ -41,6 +63,20 @@ Or to deploy only the bundle to the author, run
 Or to deploy only a single content package, run in the sub-module directory (i.e `ui.apps`)
 
     mvn clean install -PautoInstallPackage
+
+
+## Uninstall
+
+There is some issue with custom asset finders, directly uninstalling the package or removing from crx/de may not uninstall completlely. You may still see the custom extension in dropdown. To remove custom assetFinder options 
+1. Disable the plugin from osgi configuration Experience Labs - Flickr  Asset Config Service 
+2. Invoke sample content page in author, verify there is no Flickr  option in Asset finder drop down  
+2. Uninstall the el-flickr-lite.all package from package manager 
+
+ Sometimes uninstall doesn't do proper cleanup, perform cleanup by following the following steps
+1. Check for any folders starting wiht el-flickr under apps in crxde and delete them all.
+2. Check system console bundles and delete any bundle starting with Experience Labs - Asset Finder Extension for Flickr
+3. Delete any OSGI configurations starting or ending with el-flickr-lite
+4. Delete OSGI configuration named with Experience Labs - Flickr  Asset Config Service
 
 ## Testing
 
