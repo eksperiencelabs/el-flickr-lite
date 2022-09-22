@@ -1,0 +1,7 @@
+{
+    "scripts": [
+        "create path (sling:OrderedFolder) /content/dam/el-flickr-lite",
+        "create path (nt:unstructured) /content/dam/el-flickr-lite/jcr:content",
+        "set properties on /content/dam/el-flickr-lite/jcr:content\n  set cq:conf{String} to /conf/el-flickr-lite\n  set jcr:title{String} to \"Experience Labs - Asset Finder Extension for Flickr\"\nend"
+    ]
+}

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workspaceFilter version="1.0">
+    <filter root="/conf/el-flickr-lite" mode="merge"/>
+    <filter root="/content/el-flickr-lite" mode="merge"/>
+    <filter root="/content/dam/el-flickr-lite/asset.jpg" mode="merge"/>
+    <filter root="/content/experience-fragments/el-flickr-lite" mode="merge"/>
+</workspaceFilter>

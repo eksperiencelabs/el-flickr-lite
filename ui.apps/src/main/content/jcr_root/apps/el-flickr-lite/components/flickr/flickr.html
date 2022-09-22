@@ -1,0 +1,20 @@
+<sly
+	data-sly-use.commonsTemplates="core/wcm/components/commons/v1/templates.html"
+	data-sly-call="${commonsTemplates.placeholder @ isEmpty=true}"></sly>
+<sly
+	data-sly-use.model="com.eksperiencelabs.assetfinder.core.models.FlickrModel">
+<div class="flickr-img">
+	<picture>
+
+
+	<source media="(min-width:${keyname}px)" srcset="${model.flickrImg}">
+
+	<img src="${model.flickrImg}" alt="${model.altText}"> 
+	</picture><br/>
+	${model.caption}
+</div>
+<div>
+	<span>Visit us on <a href="https://eksperiencelabs.com">Eksperience
+			Labs</a></span>
+</div>
+</sly>
