@@ -16,10 +16,10 @@ Our Pro version has additional features
 
 - `Asset Download`: Asset is downloaded to AEM from Flickr as soon as author drops  on the component
 - `OOTB support` : Out of the Box components can be used for drag and drop options. 
-- `Metadata`: All the metadata values from REST API are stored on the DAM Asset path in AEM
-- `Tags`:  Tag values from REST API are created and stored in AEM Tagging Structure
+- `Metadata`: All the metadata values from Flickr REST API are stored on the DAM Asset path in AEM
+- `Tags`:  Taxomonies from Flickr REST API are created and stored in AEM Tagging Structure
 - `Structured DAM`: External DAM assets are stored in organized and structured folders in AEM Assets, structure is based on the external URL path
-- `Customizable`: API url, DAM path are fully configurable in OSGI settings making it to extend for other REST based APIs and customization
+- `Customizable`: API url, DAM path are fully configurable in OSGI settings making it to extend for other REST based DAM Asset API Providers
 
 Please [contact us](https://eksperiencelabs.com/contact/ ) if you are interested in learning about our pro version. 
 
