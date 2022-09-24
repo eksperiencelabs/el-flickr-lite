@@ -15,7 +15,7 @@ Following are the  features added in this project
 Our Pro version has additional features
 
 - `Asset Download`: Asset is downloaded to AEM from Flickr as soon as author drops  on the component
-- `OOTB support` : Out of the Box components can be used for drag and drop options. 
+- `OOTB support` : Out of the Box core components with image field can be used for drag and drop options. 
 - `Metadata`: All the metadata values from Flickr REST API are stored on the DAM Asset path in AEM
 - `Tags`:  Taxomonies from Flickr REST API are created and stored in AEM Tagging Structure
 - `Structured DAM`: External DAM assets are stored in organized and structured folders in AEM Assets, structure is based on the external URL path
